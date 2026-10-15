@@ -48,6 +48,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip; /* never let anything nudge the page sideways on phones */
   background: var(--oat);
   color: var(--ink);
   font: 400 1.0625rem/1.65 var(--sans);
@@ -66,6 +67,8 @@ h1 em, h2 em { font-style: italic; font-weight: 400; color: var(--berry); }
 p { margin: 0; }
 
 .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 var(--gutter); }
+/* Grid columns may shrink below their content's natural width instead of widening the page. */
+.hero-grid > *, .welcome-grid > *, .reviews-grid > *, .book-grid > *, .visit-grid > *, .gift > * { min-width: 0; }
 
 .skip-link {
   position: absolute; left: 12px; top: -48px; z-index: 100;
@@ -356,12 +359,12 @@ p { margin: 0; }
   background: var(--linen); border-radius: var(--radius); box-shadow: var(--shadow-soft); overflow: hidden;
 }
 .hours caption { text-align: left; font: 500 1.45rem/1.2 var(--serif); color: var(--cocoa); margin-bottom: 10px; }
-.hours th, .hours td { padding: 12px 18px; border-top: 1px solid var(--line); text-align: left; }
+.hours th, .hours td { padding: 12px 14px; border-top: 1px solid var(--line); text-align: left; }
 .hours tr:first-child th, .hours tr:first-child td { border-top: 0; }
 .hours th { font-weight: 600; }
-.hours td { text-align: right; color: var(--muted); white-space: nowrap; }
+.hours td { text-align: right; color: var(--muted); }
 .hours tr.is-today th, .hours tr.is-today td { background: var(--blush); color: var(--berry); font-weight: 700; }
-.hours tr.is-today th::after { content: "Today"; margin-left: 8px; font-size: 0.68rem; letter-spacing: .08em; text-transform: uppercase; background: var(--berry); color: #fff; padding: 2px 8px; border-radius: 999px; vertical-align: 2px; }
+.hours tr.is-today th::after { content: "Today"; display: inline-block; margin-left: 6px; font-size: 0.68rem; letter-spacing: .08em; text-transform: uppercase; background: var(--berry); color: #fff; padding: 2px 8px; border-radius: 999px; vertical-align: 2px; }
 .fine { margin-top: 10px; font-size: 0.87rem; color: var(--muted); }
 .map { border-radius: var(--radius); overflow: hidden; background: var(--sand); min-height: 320px; box-shadow: var(--shadow); }
 .map iframe { display: block; width: 100%; height: 100%; min-height: 320px; border: 0; filter: sepia(.15) saturate(.9); }
@@ -412,6 +415,8 @@ p { margin: 0; }
   .book-form { padding: 32px; }
   .gift { grid-template-columns: 1fr 1.2fr; gap: 48px; }
   .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+  .hours th, .hours td { padding: 12px 18px; }
+  .hours td { white-space: nowrap; }
   .icon-btn { padding: 0 14px; }
   .icon-btn-label { display: inline; }
   .hero-actions .btn { flex: 0 0 auto; }
