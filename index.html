@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Samp Hair &amp; Spa | Hair Salon &amp; Spa in Scarborough, ON</title>
-  <meta name="description" content="Samp Hair &amp; Spa is a hair salon and spa in Scarborough on Painted Post Dr. Haircuts, colour, eyebrow threading, stripless waxing, facials, massage and bridal styling. Book online or call (416) 438-0123.">
+  <title>Samp Hair &amp; Spa | Cozy Hair Salon &amp; Spa in Scarborough, ON</title>
+  <meta name="description" content="Samp Hair &amp; Spa is a cozy neighbourhood hair salon and spa in Scarborough on Painted Post Dr. Haircuts, colour, eyebrow threading, stripless waxing, facials, massage and bridal styling. Book online or call (416) 438-0123.">
   <link rel="canonical" href="https://samp-hair-spa.lovable.app/">
-  <meta name="theme-color" content="#f7f2ec">
+  <meta name="theme-color" content="#f6ede2">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Samp Hair &amp; Spa | Hair Salon &amp; Spa in Scarborough">
@@ -14,11 +14,13 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=75&fit=crop&auto=format">
   <meta property="og:url" content="https://samp-hair-spa.lovable.app/">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -28,6 +30,7 @@
     "name": "Samp Hair & Spa",
     "legalName": "Samp Hair And Spa Inc.",
     "url": "https://samp-hair-spa.lovable.app/",
+    "logo": "https://samp-hair-spa.lovable.app/assets/logo.svg",
     "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=75&fit=crop&auto=format",
     "telephone": "+1-416-438-0123",
     "email": "samphairandspa@gmail.com",
@@ -55,14 +58,13 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Samp Hair &amp; Spa, back to top">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span class="brand-name">Samp <em>Hair &amp; Spa</em></span>
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="Samp Hair and Spa" width="206" height="98">
       </a>
       <nav class="main-nav" aria-label="Main">
+        <a href="#welcome">About</a>
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
-        <a href="#team">Team</a>
         <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
       </nav>
@@ -77,58 +79,85 @@
   </header>
 
   <main id="main">
-    <!-- Hero: swap the image for a real photo of the salon or your work (see README). -->
+    <!-- Hero: swap the photos for real ones of the salon and your work (see README). -->
     <section class="hero" aria-labelledby="hero-title">
-      <picture class="hero-media">
-        <img
-          src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=70&fit=crop&auto=format"
-          srcset="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=640&q=70&fit=crop&auto=format 640w,
-                  https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1000&q=70&fit=crop&auto=format 1000w,
-                  https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600&q=70&fit=crop&auto=format 1600w"
-          sizes="100vw" width="1600" height="1067"
-          alt="A stylist finishing a client's hair at Samp Hair &amp; Spa"
-          fetchpriority="high" decoding="async">
-      </picture>
-      <div class="container hero-content">
-        <p class="eyebrow">Hair salon &amp; spa in Scarborough</p>
-        <h1 id="hero-title">Feel like <em>yourself</em>, only more rested.</h1>
-        <p class="hero-lede">Cuts, colour, threading, waxing, facials and massage for women and men, on Painted Post Drive.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="#book" data-book>Book an appointment</a>
-          <a class="btn btn-ghost btn-lg" href="#services">See prices</a>
+      <div class="container hero-grid">
+        <div class="hero-visual">
+          <div class="arch">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=900&q=70&fit=crop&auto=format"
+              srcset="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=520&q=70&fit=crop&auto=format 520w,
+                      https://images.unsplash.com/photo-1562322140-8baeececf3df?w=900&q=70&fit=crop&auto=format 900w,
+                      https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1300&q=70&fit=crop&auto=format 1300w"
+              sizes="(min-width: 960px) 44vw, 100vw" width="900" height="1100"
+              alt="A stylist finishing a client's hair at Samp Hair &amp; Spa"
+              fetchpriority="high" decoding="async">
+          </div>
+          <a class="rating-badge" href="https://www.google.com/maps/search/?api=1&query=Samp+Hair+%26+Spa+314+Painted+Post+Dr+Scarborough" target="_blank" rel="noopener">
+            <strong>4.4</strong>
+            <span class="stars" aria-hidden="true">★★★★<span class="star-part">★</span></span>
+            <small>~300 Google reviews</small>
+          </a>
         </div>
-        <a class="hero-rating" href="https://www.google.com/maps/search/?api=1&query=Samp+Hair+%26+Spa+314+Painted+Post+Dr+Scarborough" target="_blank" rel="noopener">
-          <span class="stars" aria-hidden="true">★★★★<span class="star-part">★</span></span>
-          <span><strong>4.4</strong> from ~300 Google reviews</span>
-        </a>
+        <div class="hero-copy">
+          <p class="eyebrow">Your neighbourhood salon &amp; spa in Scarborough</p>
+          <h1 id="hero-title">Come in, get comfy, <em>leave glowing</em>.</h1>
+          <p class="hero-lede">Cuts, colour, threading, waxing, facials and massage for women and men, in a warm little salon on Painted Post Drive.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#book" data-book>Book an appointment</a>
+            <a class="btn btn-soft btn-lg" href="#services">See prices</a>
+          </div>
+          <ul class="hero-facts" aria-label="Opening status and contact">
+            <li><span class="status-dot" data-status-dot aria-hidden="true"></span><span data-status-text>Open Mon–Sat</span></li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=314%20Painted%20Post%20Dr%2C%20Scarborough%2C%20ON%20M1G%202M3" target="_blank" rel="noopener">314 Painted Post Dr</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Quick facts strip -->
-    <section class="quick" aria-label="Opening status and contact">
-      <div class="container quick-grid">
-        <div class="quick-item">
-          <span class="status-dot" data-status-dot aria-hidden="true"></span>
-          <span data-status-text>Mon–Sat · 10 AM–7 PM (Sat 9:30–6)</span>
+    <!-- Welcome -->
+    <section class="section section-sand" id="welcome" aria-labelledby="welcome-title">
+      <div class="container welcome-grid">
+        <figure class="welcome-photo">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=65&fit=crop&auto=format"
+               srcset="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=480&q=65&fit=crop&auto=format 480w,
+                       https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=65&fit=crop&auto=format 900w"
+               sizes="(min-width: 960px) 40vw, 100vw" width="900" height="1000" loading="lazy" decoding="async"
+               alt="Our bright, welcoming salon with mirrors and styling chairs">
+          <figcaption>Beauty feels better here.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">Welcome to Samp</p>
+          <h2 id="welcome-title">An hour that <em>belongs to you</em>.</h2>
+          <p class="lede">We believe a great salon visit is more than a fresh look. It’s an hour that belongs to you, with warm hands, honest advice and a calm, clean space, right here in Scarborough.</p>
+          <ul class="welcome-points">
+            <li>
+              <span class="point-icon" aria-hidden="true">♡</span>
+              <span><strong>Friendly, professional team</strong>Clients mention the warm welcome again and again.</span>
+            </li>
+            <li>
+              <span class="point-icon" aria-hidden="true">❀</span>
+              <span><strong>Clean, relaxing space</strong>A calm setting that makes self-care feel easy.</span>
+            </li>
+            <li>
+              <span class="point-icon" aria-hidden="true">✓</span>
+              <span><strong>Fair, honest pricing</strong>We confirm your price before we begin.</span>
+            </li>
+          </ul>
         </div>
-        <a class="quick-item" href="https://www.google.com/maps/dir/?api=1&destination=314%20Painted%20Post%20Dr%2C%20Scarborough%2C%20ON%20M1G%202M3" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-          314 Painted Post Dr, Scarborough
-        </a>
-        <a class="quick-item" href="tel:+14164380123">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-          (416) 438-0123
-        </a>
       </div>
     </section>
 
     <!-- Services & pricing -->
     <section class="section" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head center">
           <p class="eyebrow">Services &amp; pricing</p>
           <h2 id="services-title">A little luxury, <em>honest prices</em>.</h2>
-          <p class="section-lede">Prices are in CAD and are starting prices. We always confirm your price before we begin.</p>
+          <p class="lede">Prices are in CAD and are starting prices. We always confirm yours before we begin.</p>
         </div>
 
         <nav class="chips" aria-label="Service categories">
@@ -143,7 +172,8 @@
 
         <div class="menu-grid">
           <article class="menu-card" id="svc-hair">
-            <h3>Hair <span>Cut &amp; colour</span></h3>
+            <p class="menu-tag">Cut &amp; colour</p>
+            <h3>Hair</h3>
             <p>Cuts, blow-dries, colour, highlights and treatments for every length and texture.</p>
             <ul class="price-list">
               <li><span>Haircut</span><b class="call">Call for price</b></li>
@@ -156,7 +186,8 @@
           </article>
 
           <article class="menu-card" id="svc-threading">
-            <h3>Threading <span>Brows &amp; face</span></h3>
+            <p class="menu-tag">Brows &amp; face</p>
+            <h3>Threading</h3>
             <p>Precise, natural-looking brows and smooth skin, shaped by hand.</p>
             <ul class="price-list">
               <li><span>Eyebrows</span><b class="call">Call for price</b></li>
@@ -167,7 +198,8 @@
           </article>
 
           <article class="menu-card" id="svc-waxing">
-            <h3>Waxing <span>Stripless wax</span></h3>
+            <p class="menu-tag">Stripless wax</p>
+            <h3>Waxing</h3>
             <p>Gentle stripless wax that is kinder to skin. Quick, clean and precise.</p>
             <ul class="price-list">
               <li><span>Full face</span><b>$25</b></li>
@@ -179,7 +211,8 @@
           </article>
 
           <article class="menu-card" id="svc-skin">
-            <h3>Skin care <span>Facials</span></h3>
+            <p class="menu-tag">Facials</p>
+            <h3>Skin care</h3>
             <p>Facials and skincare treatments to cleanse, brighten and restore your glow.</p>
             <ul class="price-list">
               <li><span>Facials</span><b class="call">Call for price</b></li>
@@ -190,8 +223,9 @@
           </article>
 
           <article class="menu-card" id="svc-body">
-            <h3>Massage &amp; body <span>Relax</span></h3>
-            <p>Full-body massage and scrubs to unwind tired muscles and soften skin.</p>
+            <p class="menu-tag">Unwind</p>
+            <h3>Massage &amp; body</h3>
+            <p>Full-body massage and scrubs to ease tired muscles and soften skin.</p>
             <ul class="price-list">
               <li><span>Full-body massage</span><b class="call">Call for price</b></li>
               <li><span>Body scrub</span><b class="call">Call for price</b></li>
@@ -200,7 +234,8 @@
           </article>
 
           <article class="menu-card" id="svc-mens">
-            <h3>Men’s <span>Grooming</span></h3>
+            <p class="menu-tag">Grooming</p>
+            <h3>Men’s</h3>
             <p>Sharp, classic cuts and tidy brows, done right.</p>
             <ul class="price-list">
               <li><span>Men’s cut</span><b>$10 &amp; up</b></li>
@@ -210,13 +245,23 @@
           </article>
 
           <article class="menu-card menu-card-feature" id="svc-bridal">
-            <h3>Bridal <span>By consultation</span></h3>
-            <p>Bridal hair and styling planned with you for the big day, plus brows, waxing and facials to get you glowing beforehand.</p>
-            <ul class="price-list">
-              <li><span>Bridal hair &amp; styling</span><b class="call">By consultation</b></li>
-              <li><span>Pre-wedding brows &amp; facials</span><b class="call">Call for price</b></li>
-            </ul>
-            <a class="card-link" href="#book" data-book data-service="Bridal consultation">Book a bridal consult</a>
+            <div class="feature-photo">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=65&fit=crop&auto=format"
+                   srcset="https://images.unsplash.com/photo-1519741497674-611481863552?w=420&q=65&fit=crop&auto=format 420w,
+                           https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=65&fit=crop&auto=format 800w"
+                   sizes="(min-width: 960px) 30vw, 100vw" width="800" height="600" loading="lazy" decoding="async"
+                   alt="Bridal hair and styling on the wedding day">
+            </div>
+            <div class="feature-body">
+              <p class="menu-tag">By consultation</p>
+              <h3>Bridal</h3>
+              <p>Your day, your kind of beautiful. Bridal hair and styling planned with you, plus brows, waxing and facials to get you glowing beforehand.</p>
+              <ul class="price-list">
+                <li><span>Bridal hair &amp; styling</span><b class="call">By consultation</b></li>
+                <li><span>Pre-wedding brows &amp; facials</span><b class="call">Call for price</b></li>
+              </ul>
+              <a class="btn btn-primary" href="#book" data-book data-service="Bridal consultation">Plan your bridal look</a>
+            </div>
           </article>
         </div>
 
@@ -225,50 +270,43 @@
     </section>
 
     <!-- Gallery: replace these with your own before/after and portfolio photos (see README). -->
-    <section class="section section-tint" id="gallery" aria-labelledby="gallery-title">
+    <section class="section section-sand" id="gallery" aria-labelledby="gallery-title">
       <div class="container">
         <div class="section-head section-head-row">
           <div>
             <p class="eyebrow">Gallery</p>
-            <h2 id="gallery-title">Recent work <em>&amp; our space</em>.</h2>
+            <h2 id="gallery-title">Little moments <em>from the salon</em>.</h2>
           </div>
-          <a class="btn btn-outline" href="https://www.facebook.com/samp.hair.spa/" target="_blank" rel="noopener">See more on Facebook</a>
+          <a class="btn btn-soft" href="https://www.facebook.com/samp.hair.spa/" target="_blank" rel="noopener">See more on Facebook</a>
         </div>
         <ul class="gallery">
-          <li class="g-tall">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=65&fit=crop&auto=format"
-                 srcset="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=420&q=65&fit=crop&auto=format 420w,
-                         https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=65&fit=crop&auto=format 800w"
-                 sizes="(min-width: 900px) 40vw, 100vw" width="800" height="1000" loading="lazy" decoding="async"
-                 alt="Bright salon interior with mirrors and styling chairs">
-          </li>
           <li>
             <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=65&fit=crop&auto=format"
                  srcset="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=360&q=65&fit=crop&auto=format 360w,
                          https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=700&q=65&fit=crop&auto=format 700w"
-                 sizes="(min-width: 900px) 30vw, 50vw" width="700" height="700" loading="lazy" decoding="async"
+                 sizes="(min-width: 960px) 25vw, 50vw" width="700" height="875" loading="lazy" decoding="async"
                  alt="Defined, natural-looking brows after threading">
           </li>
           <li>
             <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=65&fit=crop&auto=format"
                  srcset="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=360&q=65&fit=crop&auto=format 360w,
                          https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=65&fit=crop&auto=format 700w"
-                 sizes="(min-width: 900px) 30vw, 50vw" width="700" height="700" loading="lazy" decoding="async"
+                 sizes="(min-width: 960px) 25vw, 50vw" width="700" height="875" loading="lazy" decoding="async"
                  alt="A calming facial treatment">
           </li>
           <li>
             <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=65&fit=crop&auto=format"
                  srcset="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=360&q=65&fit=crop&auto=format 360w,
                          https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=65&fit=crop&auto=format 700w"
-                 sizes="(min-width: 900px) 30vw, 50vw" width="700" height="700" loading="lazy" decoding="async"
+                 sizes="(min-width: 960px) 25vw, 50vw" width="700" height="875" loading="lazy" decoding="async"
                  alt="A relaxing back massage">
           </li>
           <li>
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=65&fit=crop&auto=format"
-                 srcset="https://images.unsplash.com/photo-1519741497674-611481863552?w=360&q=65&fit=crop&auto=format 360w,
-                         https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=65&fit=crop&auto=format 700w"
-                 sizes="(min-width: 900px) 30vw, 50vw" width="700" height="700" loading="lazy" decoding="async"
-                 alt="Bridal hair and styling on the wedding day">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=65&fit=crop&auto=format"
+                 srcset="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=360&q=65&fit=crop&auto=format 360w,
+                         https://images.unsplash.com/photo-1562322140-8baeececf3df?w=700&q=65&fit=crop&auto=format 700w"
+                 sizes="(min-width: 960px) 25vw, 50vw" width="700" height="875" loading="lazy" decoding="async"
+                 alt="Hair styling in progress">
           </li>
         </ul>
       </div>
@@ -277,10 +315,10 @@
     <!-- Team: add each team member's name, photo and a one-line bio here (see README). -->
     <section class="section" id="team" aria-labelledby="team-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head center">
           <p class="eyebrow">Our team</p>
           <h2 id="team-title">Warm hands, <em>honest advice</em>.</h2>
-          <p class="section-lede">A small, friendly team of specialists. Clients mention the warm welcome again and again.</p>
+          <p class="lede">A small, friendly team who’ll remember how you like it.</p>
         </div>
         <div class="team-grid">
           <article class="team-card">
@@ -291,7 +329,7 @@
           <article class="team-card">
             <div class="team-avatar" aria-hidden="true">✦</div>
             <h3>Threading &amp; wax specialists</h3>
-            <p>Hand-shaped brows and gentle stripless waxing that is kind to sensitive skin.</p>
+            <p>Hand-shaped brows and gentle stripless waxing that’s kind to sensitive skin.</p>
           </article>
           <article class="team-card">
             <div class="team-avatar" aria-hidden="true">❀</div>
@@ -303,9 +341,10 @@
     </section>
 
     <!-- Reviews -->
-    <section class="section section-dark" id="reviews" aria-labelledby="reviews-title">
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <svg class="wave wave-top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"/></svg>
       <div class="container reviews-grid">
-        <div class="reviews-score">
+        <div>
           <p class="eyebrow eyebrow-light">Reviews</p>
           <h2 id="reviews-title">Loved by <em>our neighbours</em>.</h2>
           <div class="score">
@@ -315,9 +354,7 @@
               <span class="score-meta">~300 reviews on Google</span>
             </span>
           </div>
-          <div class="reviews-actions">
-            <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Samp+Hair+%26+Spa+314+Painted+Post+Dr+Scarborough" target="_blank" rel="noopener">Read our Google reviews</a>
-          </div>
+          <a class="btn btn-cream" href="https://www.google.com/maps/search/?api=1&query=Samp+Hair+%26+Spa+314+Painted+Post+Dr+Scarborough" target="_blank" rel="noopener">Read our Google reviews</a>
         </div>
         <ul class="themes" aria-label="What clients mention most">
           <li><h3>Friendly, professional team</h3><p>A warm welcome and thoughtful care.</p></li>
@@ -326,26 +363,31 @@
           <li><h3>Expert colour &amp; threading</h3><p>Skilled colouring, cuts, brows and facials.</p></li>
         </ul>
       </div>
+      <svg class="wave wave-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v30c240 30 480 30 720 8S1200-30 1440 22V0z"/></svg>
     </section>
 
     <!-- Gift cards -->
-    <section class="gift" aria-labelledby="gift-title">
-      <div class="container gift-inner">
-        <div>
+    <section class="section section-tight" aria-labelledby="gift-title">
+      <div class="container gift">
+        <div class="gift-card" aria-hidden="true">
+          <img src="assets/logo.svg" alt="" width="160" height="76">
+          <span>Gift card</span>
+        </div>
+        <div class="gift-copy">
           <h2 id="gift-title">Give an hour <em>that’s all theirs</em>.</h2>
           <p>Gift cards for any service or amount. Pick one up in the salon or call us to arrange.</p>
+          <a class="btn btn-primary" href="tel:+14164380123">Call about gift cards</a>
         </div>
-        <a class="btn btn-primary" href="tel:+14164380123">Call about gift cards</a>
       </div>
     </section>
 
     <!-- Booking -->
-    <section class="section" id="book" aria-labelledby="book-title">
+    <section class="section section-sand" id="book" aria-labelledby="book-title">
       <div class="container book-grid">
         <div>
           <p class="eyebrow">Book online</p>
-          <h2 id="book-title">Request your <em>appointment</em>.</h2>
-          <p class="section-lede">Choose a service and a time that suits you. We’ll call or email to confirm your appointment.</p>
+          <h2 id="book-title">Save your <em>spot</em>.</h2>
+          <p class="lede">Choose a service and a time that suits you. We’ll call or email to confirm your appointment.</p>
           <ul class="book-points">
             <li>Prefer to talk? <a href="tel:+14164380123">Call (416) 438-0123</a></li>
             <li>Open Monday to Saturday, closed Sundays.</li>
@@ -402,7 +444,7 @@
           </div>
           <p class="form-error" id="form-error" role="alert" hidden></p>
           <button class="btn btn-primary btn-lg btn-block" type="submit">Send booking request</button>
-          <p class="form-note" id="form-note">This opens your email app with your request filled in, sent to samphairandspa@gmail.com.</p>
+          <p class="form-note">This opens your email app with your request filled in, sent to samphairandspa@gmail.com.</p>
           <div class="form-done" id="form-done" hidden>
             <p><strong>Almost done!</strong> Your email app should have opened. Just press send.</p>
             <p>Nothing opened? <a id="gmail-link" href="#" target="_blank" rel="noopener">Send it with Gmail</a> or <a href="tel:+14164380123">call (416) 438-0123</a>.</p>
@@ -412,12 +454,12 @@
     </section>
 
     <!-- Visit -->
-    <section class="section section-tint" id="visit" aria-labelledby="visit-title">
+    <section class="section" id="visit" aria-labelledby="visit-title">
       <div class="container visit-grid">
         <div>
           <p class="eyebrow">Visit us</p>
-          <h2 id="visit-title">Right around <em>the corner</em>.</h2>
-          <p class="open-badge" data-status-badge><span class="status-dot" data-status-dot aria-hidden="true"></span><span data-status-text>See hours below</span></p>
+          <h2 id="visit-title">Come in, <em>feel at home</em>.</h2>
+          <p class="open-badge"><span class="status-dot" data-status-dot aria-hidden="true"></span><span data-status-text>See hours below</span></p>
           <address class="address">
             <strong>Samp Hair &amp; Spa</strong><br>
             314 Painted Post Dr<br>
@@ -426,7 +468,7 @@
           </address>
           <div class="visit-actions">
             <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=314%20Painted%20Post%20Dr%2C%20Scarborough%2C%20ON%20M1G%202M3" target="_blank" rel="noopener">Get directions</a>
-            <a class="btn btn-outline" href="tel:+14164380123">Call us</a>
+            <a class="btn btn-soft" href="tel:+14164380123">Call us</a>
           </div>
           <table class="hours" id="hours">
             <caption>Opening hours</caption>
@@ -454,12 +496,9 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <a class="brand brand-light" href="#top">
-          <span class="brand-mark" aria-hidden="true">S</span>
-          <span class="brand-name">Samp <em>Hair &amp; Spa</em></span>
-        </a>
-        <p>Hair salon and spa in Scarborough, Ontario. Cuts, colour, threading, waxing, facials, massage and bridal styling.</p>
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Samp Hair and Spa" width="220" height="105" loading="lazy">
+        <p>A cozy neighbourhood hair salon and spa in Scarborough, Ontario.</p>
       </div>
       <div>
         <h2>Visit</h2>
@@ -467,7 +506,11 @@
         <p><a href="tel:+14164380123">(416) 438-0123</a></p>
       </div>
       <div>
-        <h2>Follow</h2>
+        <h2>Hours</h2>
+        <p>Mon–Wed 10–7<br>Thu–Fri 10–8<br>Sat 9:30–6 · Sun closed</p>
+      </div>
+      <div>
+        <h2>Say hello</h2>
         <p><a href="https://www.facebook.com/samp.hair.spa/" target="_blank" rel="noopener">Facebook</a></p>
         <p><a href="mailto:samphairandspa@gmail.com">samphairandspa@gmail.com</a></p>
       </div>
